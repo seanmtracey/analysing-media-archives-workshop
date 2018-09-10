@@ -1,0 +1,155 @@
+*[data-active="false"]{
+    display: none !important;
+}
+
+html,body{
+    background-color: #ebebeb;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "IBM Plex Sans", Helvetica, Arial, sans-serif;
+    padding-top: 50px;
+}
+
+a {
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /* margin: 0; */
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    min-height: 30px;
+    background-color: #466bb0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+nav div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
+nav div:nth-child(1) img{
+    height: 1.5em;
+    margin-right: 1em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 0 1em;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+main div{
+    width: 100%;
+}
+
+main #stats ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main #stats ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+main #stats ul li h1{
+    display: inline-block;
+    font-size: 3em;
+    color: white;
+    background: black;
+    padding: 0 0.3em;
+    margin: 0;
+}
+
+main #stats ul li p{
+    margin-left: 1em;
+}
+
+main #quickSearch{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+main #quickSearch form input{
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    margin-right: 1em;
+    font-size: 1em;
+    background: #d3d3d3;
+    border: 0px solid transparent;
+    outline: 0px solid transparent;
+    padding: 0.8em 1em;
+}
+
+main #quickSearch #results ol{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #quickSearch #results .searchArea ol li{
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+main #quickSearch #results .searchArea ol li:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+main #quickSearch #results #files.searchArea ol li img{
+    height: 60px;
+}
+
+main #quickSearch #results #files.searchArea ol li div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+main #quickSearch #results #files.searchArea ol li div h3{
+    margin: 0;
+}
+
+main #quickSearch #results #files.searchArea ol li div span{
+    font-size: 0.8em;
+}
