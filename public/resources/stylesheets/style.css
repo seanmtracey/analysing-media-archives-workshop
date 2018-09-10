@@ -121,6 +121,7 @@ main #quickSearch #results ol{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 main #quickSearch #results .searchArea ol li{
@@ -132,7 +133,7 @@ main #quickSearch #results .searchArea ol li{
     padding: 0.5em 1em;
 }
 
-main #quickSearch #results .searchArea ol li:hover{
+main #quickSearch #results #files.searchArea ol li:hover{
     background: rgba(0,0,0,0.1);
 }
 
@@ -152,4 +153,26 @@ main #quickSearch #results #files.searchArea ol li div h3{
 
 main #quickSearch #results #files.searchArea ol li div span{
     font-size: 0.8em;
+}
+
+main #quickSearch #results #keyframes.searchArea ol h3{
+    width: 100%;
+}
+
+main #quickSearch #results #keyframes.searchArea ol li{
+    padding: 0;
+    margin-right: 1em;
+}
+
+main #quickSearch #results #keyframes.searchArea ol li img{
+    height: 60px;
+}
+
+main #quickSearch #results #transcriptions.searchArea ol li{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main #quickSearch #results #transcriptions.searchArea ol li h4{
+    margin: 0;
 }
