@@ -4,6 +4,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const w3id = require('w3id-middleware');
 
 const app = express();
 
@@ -18,6 +19,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+if(process.env.NODE_ENV !== "development"){
+  app.use(w3id);
+}
 
 app.use('/', require('./routes/index'));
 

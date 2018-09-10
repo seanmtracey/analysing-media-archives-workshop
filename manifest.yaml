@@ -1,4 +1,4 @@
 ---
 applications:
-- name: blamo-blamo-one
+- name: seans-friendly-media-analyser-dashboard
   instances: 1

@@ -20,6 +20,7 @@
     "rimraf": "^2.6.2",
     "serve-favicon": "~2.4.5",
     "uuid": "^3.3.2",
+    "w3id-middleware": "^0.2.21",
     "watson-developer-cloud": "^3.9.0"
   }
 }
