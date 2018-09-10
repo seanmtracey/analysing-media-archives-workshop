@@ -25,6 +25,9 @@ if(process.env.NODE_ENV !== "development"){
 }
 
 app.use('/', require('./routes/index'));
+app.use('/asset', require('./routes/asset'));
+app.use('/classifiers', require('./routes/classifiers'));
+app.use('/media', require('./routes/media'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
