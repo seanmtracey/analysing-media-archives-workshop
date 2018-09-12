@@ -23,6 +23,24 @@ h1, h2, h3, h4, h5, h6{
     /* margin: 0; */
 }
 
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+form input[type="text"]{
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    margin-right: 1em;
+    font-size: 1em;
+    background: #d3d3d3;
+    border: 0px solid transparent;
+    outline: 0px solid transparent;
+    padding: 0.8em 1em;
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -35,6 +53,7 @@ nav{
     align-items: center;
     padding: 0 1em;
     box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
 }
 
 nav div:nth-child(1){
@@ -104,19 +123,7 @@ main #quickSearch{
     overflow-y: scroll;
 }
 
-main #quickSearch form input{
-    display: block;
-    width: 90%;
-    box-sizing: border-box;
-    margin-right: 1em;
-    font-size: 1em;
-    background: #d3d3d3;
-    border: 0px solid transparent;
-    outline: 0px solid transparent;
-    padding: 0.8em 1em;
-}
-
-main #quickSearch #results ol{
+main #quickSearch #results ol, .gridList{
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -124,7 +131,7 @@ main #quickSearch #results ol{
     list-style-type: none;
 }
 
-main #quickSearch #results .searchArea ol li{
+.gridList li{
     display: flex;
     align-items: center;
     margin-right: 2em;
@@ -133,25 +140,25 @@ main #quickSearch #results .searchArea ol li{
     padding: 0.5em 1em;
 }
 
-main #quickSearch #results #files.searchArea ol li:hover{
+.selectableObject:hover{
     background: rgba(0,0,0,0.1);
 }
 
-main #quickSearch #results #files.searchArea ol li img{
+.selectableObject img{
     height: 60px;
 }
 
-main #quickSearch #results #files.searchArea ol li div {
+.selectableObject div {
     display: flex;
     flex-direction: column;
     margin-left: 1em;
 }
 
-main #quickSearch #results #files.searchArea ol li div h3{
+.selectableObject div h3{
     margin: 0;
 }
 
-main #quickSearch #results #files.searchArea ol li div span{
+.selectableObject div span{
     font-size: 0.8em;
 }
 
@@ -173,6 +180,14 @@ main #quickSearch #results #transcriptions.searchArea ol li{
     align-items: flex-start;
 }
 
+main #quickSearch #results #transcriptions.searchArea ol li:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
 main #quickSearch #results #transcriptions.searchArea ol li h4{
     margin: 0;
+}
+
+main#classifiers{
+    flex-direction: column;
 }
