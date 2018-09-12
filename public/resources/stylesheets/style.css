@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6{
 form {
     width: 100%;
     max-width: 600px;
+    margin-bottom: 1em;
 }
 
 
@@ -210,6 +211,7 @@ main #quickSearch #results #keyframes.searchArea ol li img, .keyframe img{
 .transcriptarea ol li{
     flex-direction: column;
     align-items: flex-start;
+    cursor: pointer;
 }
 
 .transcriptarea ol li:hover{
@@ -241,7 +243,6 @@ main#media video#src-media{
 main#media #video-contains{
     background: white;
     padding: 1em;
-    margin-top: 1em;
     box-sizing: border-box;
 }
 
