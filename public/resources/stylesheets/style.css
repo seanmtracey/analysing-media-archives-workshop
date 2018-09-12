@@ -121,6 +121,14 @@ ul, ol{
     margin-left: 0.5em;
 }
 
+button{
+    background-color: #6f97e1;
+}
+
+button.red{
+    background-color: #cf8686;
+}
+
 main #stats ul li{
     display: flex;
     align-items: center;
@@ -250,4 +258,65 @@ main#media #video-contains ol{
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+}
+
+main#classifier {
+    flex-direction: column;
+}
+
+main#classifier #top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main#classifier #top .action-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main#classifier #top .action-buttons button{
+    margin-left: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 0 1em;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    cursor: pointer;
+    height: 3em;
+}
+
+
+main#classifier #classes .class{
+    display: flex;
+    flex-direction: column;
+}
+
+main#classifier #classes .class .details{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+main#classifier #classes .class .details h3{
+    margin: 0;
+    margin-right: 0.5em;
+}
+
+main#classifier #classes .class .details span{
+    font-size: 0.8em;
+}
+
+main#classifier #classes .class ul.images{
+    display: flex;
+    flex-direction: row;
+}
+
+main#classifier #classes .class ul.images li{
+    margin-right: 24px;
+}
+
+main#classifier #classes .class ul.images li img{
+    width: 48px;
 }
