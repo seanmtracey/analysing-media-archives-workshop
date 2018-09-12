@@ -138,10 +138,16 @@ main #quickSearch #results ol, .gridList{
     margin-bottom: 1em;
     cursor: pointer;
     padding: 0.5em 1em;
+    line-height: 1.2em;
 }
 
 .selectableObject:hover{
     background: rgba(0,0,0,0.1);
+}
+
+.selectableObject a{
+    display: inline-flex;
+    text-decoration: none;
 }
 
 .selectableObject img{
@@ -156,6 +162,8 @@ main #quickSearch #results ol, .gridList{
 
 .selectableObject div h3{
     margin: 0;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .selectableObject div span{

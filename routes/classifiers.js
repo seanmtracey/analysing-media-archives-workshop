@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/classifier/:CLASSIFIER_ID', (req, res, next) => {
     res.render('classifier', { title: 'Media Archive Analyser | Custom Classifier' });
-    res.end();
 });
 
 router.post('/classifier/:CLASSIFIER_ID/class/create', (req, res, next) => {
